@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-
+import PropTypes from 'prop-types';
 
 const Lists = (props) => {
  
  
-  const blogs = props.blogs
+  const blogs = props.blogs;
+ 
   return ( 
 
   
@@ -25,5 +26,7 @@ const Lists = (props) => {
     </div>
    );
 }
- 
+ Lists.propTypes = {
+   blogs: PropTypes.arrayOf(PropTypes.object)
+ };
 export default Lists;

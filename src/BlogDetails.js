@@ -12,6 +12,7 @@ fetch('http://localhost:3000/blogs/' + blogs.id,{
 history.push('/');
 })
 }
+
   return (
     <div className="blog-details">
       { isLoading && <div>Loading...</div> }
